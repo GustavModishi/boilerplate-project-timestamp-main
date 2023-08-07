@@ -34,7 +34,7 @@ app.get("/api", (req, res) => {
 });
 
 app.get("/api/:currentDate", (req, res) => {
-  let currentDate = req.params.currentDate;
+  const currentDate = req.params.currentDate;
 
   let unixDate;
   let dateObj;
